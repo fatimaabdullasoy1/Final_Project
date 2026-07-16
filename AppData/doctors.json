@@ -1,0 +1,92 @@
+[
+  {
+    "ID": "2b1af1bf-d168-45c3-bedd-0fdeae4df873",
+    "Name": "Aygun",
+    "Surname": "Mammadova",
+    "IsTecrube": 5,
+    "Sobe": 0,
+    "Status": 1,
+    "Email": "aygun.mammadova@hospital.com",
+    "Password": "1234"
+  },
+  {
+    "ID": "104592c8-7f38-4d0c-8afe-52e5e409c7df",
+    "Name": "Kamran",
+    "Surname": "Isayev",
+    "IsTecrube": 8,
+    "Sobe": 0,
+    "Status": 1,
+    "Email": "kamran.isayev@hospital.com",
+    "Password": "1234"
+  },
+  {
+    "ID": "29977be3-946c-44a3-a29e-6292802e63e1",
+    "Name": "Nigar",
+    "Surname": "Huseynova",
+    "IsTecrube": 3,
+    "Sobe": 0,
+    "Status": 1,
+    "Email": "nigar.huseynova@hospital.com",
+    "Password": "1234"
+  },
+  {
+    "ID": "ca7aabcf-e376-48db-9b08-b0773bd0f768",
+    "Name": "Elvin",
+    "Surname": "Rzayev",
+    "IsTecrube": 10,
+    "Sobe": 1,
+    "Status": 1,
+    "Email": "elvin.rzayev@hospital.com",
+    "Password": "1234"
+  },
+  {
+    "ID": "948b0e1b-63f3-424f-9ef4-05aafb317076",
+    "Name": "Turan",
+    "Surname": "Guliyev",
+    "IsTecrube": 6,
+    "Sobe": 1,
+    "Status": 1,
+    "Email": "turan.guliyev@hospital.com",
+    "Password": "1234"
+  },
+  {
+    "ID": "ff3d2de4-4892-4e63-abec-6736041f500b",
+    "Name": "Leyla",
+    "Surname": "Aliyeva",
+    "IsTecrube": 4,
+    "Sobe": 2,
+    "Status": 1,
+    "Email": "leyla.aliyeva@hospital.com",
+    "Password": "1234"
+  },
+  {
+    "ID": "ef2369ba-97e0-494f-949a-25c0f8df539e",
+    "Name": "Rashad",
+    "Surname": "Hasanov",
+    "IsTecrube": 7,
+    "Sobe": 2,
+    "Status": 1,
+    "Email": "rashad.hasanov@hospital.com",
+    "Password": "1234"
+  },
+  {
+    "ID": "0718c03d-b5ed-4d43-82b8-7da2d068bcee",
+    "Name": "Sabina",
+    "Surname": "Karimova",
+    "IsTecrube": 2,
+    "Sobe": 2,
+    "Status": 1,
+    "Email": "sabina.karimova@hospital.com",
+    "Password": "1234"
+  },
+  {
+    "ID": "b3f0ac43-744f-4500-86fd-eeee013c9e3f",
+    "Name": "Tural",
+    "Surname": "Abbasov",
+    "IsTecrube": 9,
+    "Sobe": 2,
+    "Status": 1,
+    "Email": "tural.abbasov@hospital.com",
+    "Password": "1234"
+  }
+]

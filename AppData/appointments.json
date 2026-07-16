@@ -1,0 +1,218 @@
+[
+  {
+    "Id": "154b73cb-1cf7-4662-a467-7f0a2d282cd9",
+    "DoctorId": "2b1af1bf-d168-45c3-bedd-0fdeae4df873",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "f08bf668-d0a2-4809-a9b1-478e9f6632ef",
+    "DoctorId": "2b1af1bf-d168-45c3-bedd-0fdeae4df873",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "584fc192-fb01-44a9-8e1d-79accf412447",
+    "DoctorId": "2b1af1bf-d168-45c3-bedd-0fdeae4df873",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "02bb47a1-664a-40c7-b4e6-f96f3d9480ff",
+    "DoctorId": "104592c8-7f38-4d0c-8afe-52e5e409c7df",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "6456a771-bb9d-463f-8a12-79af066ba5b6",
+    "DoctorId": "104592c8-7f38-4d0c-8afe-52e5e409c7df",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "1467585a-00f1-43c8-a81d-80d8af198eb9",
+    "DoctorId": "104592c8-7f38-4d0c-8afe-52e5e409c7df",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "fb88aeae-da50-4f9e-a400-d46566ed464c",
+    "DoctorId": "29977be3-946c-44a3-a29e-6292802e63e1",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "490e4ae6-4f8f-4657-83c8-9577f30d0e00",
+    "DoctorId": "29977be3-946c-44a3-a29e-6292802e63e1",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "f97fa988-3ab9-4030-9b2a-eb1cce6e90e7",
+    "DoctorId": "29977be3-946c-44a3-a29e-6292802e63e1",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "75bd6b4d-1541-43dc-84ee-414173124f0f",
+    "DoctorId": "ca7aabcf-e376-48db-9b08-b0773bd0f768",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "cf71af2e-42f6-472d-9fad-fd15443a3978",
+    "DoctorId": "ca7aabcf-e376-48db-9b08-b0773bd0f768",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "895c36f5-19d0-4667-8aea-bc391647dd9b",
+    "DoctorId": "ca7aabcf-e376-48db-9b08-b0773bd0f768",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "af6886ee-efa5-44ff-b340-1d7004bc7973",
+    "DoctorId": "948b0e1b-63f3-424f-9ef4-05aafb317076",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "68e774ca-c277-4726-a049-90ffbfca11fb",
+    "DoctorId": "948b0e1b-63f3-424f-9ef4-05aafb317076",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "a67e8715-cce7-4cb7-b22b-0a8148f9a904",
+    "DoctorId": "948b0e1b-63f3-424f-9ef4-05aafb317076",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "3c22704f-1ef7-497e-a0a0-8699f6b63a57",
+    "DoctorId": "ff3d2de4-4892-4e63-abec-6736041f500b",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "190cb0f3-fe5b-4db3-a300-393a0a6f4437",
+    "DoctorId": "ff3d2de4-4892-4e63-abec-6736041f500b",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "26d27acb-2c23-4c10-ba4f-e321848523d5",
+    "DoctorId": "ff3d2de4-4892-4e63-abec-6736041f500b",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "4e8ad83a-da03-4f55-a064-87dac751be93",
+    "DoctorId": "ef2369ba-97e0-494f-949a-25c0f8df539e",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "092d1c90-8f33-4ef1-ae8b-df155209067b",
+    "DoctorId": "ef2369ba-97e0-494f-949a-25c0f8df539e",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "7b9e280d-68d5-4bd4-be2b-2a7d73b0d058",
+    "DoctorId": "ef2369ba-97e0-494f-949a-25c0f8df539e",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "6040bc39-cb96-467d-a497-b5f8cb2c1c80",
+    "DoctorId": "0718c03d-b5ed-4d43-82b8-7da2d068bcee",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "28ac3e90-dea8-460f-9814-b6227c77bb9b",
+    "DoctorId": "0718c03d-b5ed-4d43-82b8-7da2d068bcee",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "39eaa819-6af6-464c-82c2-58086c71adb8",
+    "DoctorId": "0718c03d-b5ed-4d43-82b8-7da2d068bcee",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "3f365f70-5549-4d6d-b611-fdb614e0d7c5",
+    "DoctorId": "b3f0ac43-744f-4500-86fd-eeee013c9e3f",
+    "Time": "09:00-11:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "4dbd441f-4668-4d57-89cc-c5c4b1a0c2d7",
+    "DoctorId": "b3f0ac43-744f-4500-86fd-eeee013c9e3f",
+    "Time": "12:00-14:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  },
+  {
+    "Id": "87359f26-8113-404d-a73b-ad0eaf3631a8",
+    "DoctorId": "b3f0ac43-744f-4500-86fd-eeee013c9e3f",
+    "Time": "15:00-17:00",
+    "IsReserved": false,
+    "UserId": null,
+    "Date": null
+  }
+]
