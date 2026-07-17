@@ -34,7 +34,7 @@ namespace Homewrok_final
             while (true)
             {
                 string[] mainOptions = {
-                    "Admin Girişi",
+                    "Admin Entry",
                     "User Qeydiyyat",
                     "User Login",
                     "Doctor Qeydiyyatı",
