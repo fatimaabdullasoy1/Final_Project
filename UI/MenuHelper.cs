@@ -1,10 +1,47 @@
 ﻿using System;
 
-//Yuxari/ashagi ox duymeleri ile menyu gostermek ucun
 namespace Homewrok_final.UI
 {
     public static class MenuHelper
     {
+
+        public static void PrintTitle(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
+
+        public static void PrintSuccess(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
+
+        public static void PrintError(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
+
+        public static void PrintInfo(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
+
+        public static void PrintBanner()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("╔══════════════════════════════════════╗");
+            Console.WriteLine("║      Hospital RESERVATION SYSTEM     ║");
+            Console.WriteLine("╚══════════════════════════════════════╝");
+            Console.ResetColor();
+        }
+
         public static int ShowMenu(string title, string[] options)
         {
             int selectedIndex = 0;
@@ -14,7 +51,7 @@ namespace Homewrok_final.UI
             {
                 Console.Clear();
                 Console.WriteLine(title);
-                Console.WriteLine("(Yuxarı/Aşağı ox düymələri ilə seçin, Enter ilə təsdiqləyin)");
+                Console.WriteLine("(Yuxari/Aşaği ox buttonlari ile seçin, Enter ile tesdiqleyin)");
                 Console.WriteLine();
 
                 for (int i = 0; i < options.Length; i++)
@@ -52,7 +89,7 @@ namespace Homewrok_final.UI
         public static void PressAnyKeyToContinue()
         {
             Console.WriteLine();
-            Console.WriteLine("Davam etmək üçün istənilən düyməyə basın...");
+            Console.WriteLine("Continue etmek üçün istenilen düymeye basin (Can be Random) ...");
             Console.ReadKey(true);
         }
     }

@@ -26,6 +26,11 @@ namespace Homewrok_final
             SeedService seedService = new SeedService(doctorRepository, appointmentRepository);
             seedService.SeedIfEmpty();
 
+            Console.Clear();
+            MenuHelper.PrintBanner();
+            Console.WriteLine();
+            MenuHelper.PressAnyKeyToContinue();
+
             while (true)
             {
                 string[] mainOptions = {
@@ -37,7 +42,7 @@ namespace Homewrok_final
                     "Çıxış"
                 };
 
-                int choice = MenuHelper.ShowMenu(" eSAS MENYU ", mainOptions);
+                int choice = MenuHelper.ShowMenu(" Main MENU ", mainOptions);
 
                 switch (choice)
                 {
@@ -88,11 +93,11 @@ namespace Homewrok_final
 
             if (newUser == null)
             {
-                Console.WriteLine("Bu email artıq istifade olunub!");
+                MenuHelper.PrintError("Bu email artıq istifadə olunub!");
             }
             else
             {
-                Console.WriteLine("Qeydiyyat uğurludur! İndi giriş ede bilersiniz.");
+                MenuHelper.PrintSuccess("Qeydiyyat uğurludur! İndi giriş edə bilərsiniz.");
             }
 
             MenuHelper.PressAnyKeyToContinue();
@@ -113,12 +118,12 @@ namespace Homewrok_final
 
             if (user == null)
             {
-                Console.WriteLine("Email ve ya şifre yanlışdır!");
+                MenuHelper.PrintError("Email və ya şifrə yanlışdır!");
                 MenuHelper.PressAnyKeyToContinue();
                 return;
             }
 
-            Console.WriteLine($"Xoş geldiniz, {user.Name} {user.Surname}!");
+            MenuHelper.PrintSuccess($"Xoş gəldiniz, {user.Name} {user.Surname}!");
             MenuHelper.PressAnyKeyToContinue();
 
             SobeSelectionMenu(user);
@@ -191,7 +196,7 @@ namespace Homewrok_final
             if (!success)
             {
                 Console.Clear();
-                Console.WriteLine("Bu vaxt artıq rezerv olunub, zehmet olmasa başqa bir vaxt seçin.");
+                MenuHelper.PrintError("Bu vaxt artıq rezerv olunub, zəhmət olmasa başqa bir vaxt seçin.");
                 MenuHelper.PressAnyKeyToContinue();
                 SlotSelectionMenu(user, doctor); // REKURSİYA
                 return;
@@ -200,8 +205,8 @@ namespace Homewrok_final
             string receiptPath = receiptService.GenerateReceipt(user, doctor, selectedSlot.Time);
 
             Console.Clear();
-            Console.WriteLine($"Teşekkürler {user.Name} {user.Surname}, siz saat {selectedSlot.Time} de {doctor.Name} Doctorin qebuluna yazıldınız.");
-            Console.WriteLine($"Çekiniz saxlanıldı: {receiptPath}");
+            MenuHelper.PrintSuccess($"Təşəkkürlər {user.Name} {user.Surname}, siz saat {selectedSlot.Time} də {doctor.Name} həkimin qəbuluna yazıldınız.");
+            MenuHelper.PrintInfo($"Çekiniz saxlanıldı: {receiptPath}");
             MenuHelper.PressAnyKeyToContinue();
         }
 
@@ -224,10 +229,16 @@ namespace Homewrok_final
             Console.Write("Pssword: ");
             string password = Console.ReadLine();
 
-            Console.Write("is tecrubesi (year): ");
+            Console.Write("İş təcrübəsi (il): ");
+            int experience;
+            bool isValid = int.TryParse(Console.ReadLine(), out experience);
 
-
-            int experience = int.Parse(Console.ReadLine());
+            if (!isValid)
+            {
+                MenuHelper.PrintError("Yanlış format! Rəqəm daxil edin.");
+                MenuHelper.PressAnyKeyToContinue();
+                return;
+            }
 
             string[] sobeOptions = { "Pediatriya", "Travmatologiya", "Stomatologiya" };
             int sobeChoice = MenuHelper.ShowMenu("Shobe seçin:", sobeOptions);
@@ -263,11 +274,11 @@ namespace Homewrok_final
 
             if (doctor == null)
             {
-                Console.WriteLine("Email/şifre yanlışdır, ya da hesabınız hele tesdiqlenmeyib.");
+                MenuHelper.PrintError("Email/şifrə yanlışdır, ya da hesabınız hələ təsdiqlənməyib.");
             }
             else
             {
-                Console.WriteLine($"Xoş geldiniz, Dr. {doctor.Name} {doctor.Surname}!");
+                MenuHelper.PrintSuccess($"Xoş gəldiniz, Dr. {doctor.Name} {doctor.Surname}!");
             }
 
             MenuHelper.PressAnyKeyToContinue();
