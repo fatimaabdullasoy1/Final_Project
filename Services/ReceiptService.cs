@@ -20,7 +20,7 @@ namespace Homewrok_final.Services
             string fullPath = Path.Combine(_folderPath, fileName);
 
             string content =
-                "========== RANDEVU ÇEKİ ==========" + Environment.NewLine +
+                "========== RECEIPT RECEIPT ==========" + Environment.NewLine +
                 $"Tarix: {DateTime.Now:dd.MM.yyyy HH:mm}" + Environment.NewLine +
                 "-----------------------------------" + Environment.NewLine +
                 $"Xəstə: {user.Name} {user.Surname}" + Environment.NewLine +

@@ -4,13 +4,11 @@ using System.Linq;
 using Homewrok_final.Data;
 using Homewrok_final.Models;
 
-// Sobe, hekim ve saat sechimi + rezervasiya mentiqi burdadir
+
 namespace Homewrok_final.Services
 {
     public class AppointmentService
     {
-        //readonly — bu sahəyə yalnız bir dəfə, constructor-da dəyər verilə bilər.
-        //Sonra proqram işlədikcə, bu sahəni başqa bir dəyərlə əvəz edə bilməzsən
         private readonly FileRepository<Doctor> _doctorRepository;
         private readonly FileRepository<Appointment> _appointmentRepository;
         private readonly INotificationService _notificationService;
@@ -25,7 +23,6 @@ namespace Homewrok_final.Services
             _notificationService = notificationService;
         }
 
-        //secilen sobedeki yalniz approved olan hekimleri qaytarir
         public List<Doctor> GetApprovedDoctorsBySobe(Shobe sobe)
         {
             List<Doctor> doctors = _doctorRepository.LoadAll();
@@ -44,8 +41,6 @@ namespace Homewrok_final.Services
             return doctors.FirstOrDefault(d => d.ID == doctorId);
         }
 
-        // Rezervasiya edir, uğurlu olarsa bildiriş göndərir. true = uğurlu, false = artıq rezerv olunub
-        //Rezervasiya edir, ugurlu olsa bildiris gonderir, dolu saat ushun false qaytarir
         public bool ReserveSlot(Guid appointmentId, User user, Doctor doctor)
         {
             List<Appointment> appointments = _appointmentRepository.LoadAll();
@@ -58,7 +53,7 @@ namespace Homewrok_final.Services
 
             if (target.IsReserved)
             {
-                return false; // artıq rezerv olunub, burda rekursiya bas verir
+                return false; 
             }
 
             target.IsReserved = true;
@@ -66,7 +61,6 @@ namespace Homewrok_final.Services
 
             _appointmentRepository.SaveAll(appointments);
 
-            // Bildiriş göndər,notify INotificationun icindedi
             _notificationService.Notify(user, doctor, target.Time);
 
             return true;

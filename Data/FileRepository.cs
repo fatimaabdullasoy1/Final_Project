@@ -76,13 +76,3 @@ namespace Homewrok_final.Data
 
 
 
-
-//Ayri-ayri "DoctorFileHandler", "UserFileHandler", "AppointmentFileHandler" yazmaq
-//evezine (3 defe tekrarlanan kod), bir generic class yazilir ki, her uchu ushun
-//ishlesin, chunki hamisina eyni emeliyyatlar lazimdir: siyahini yuklemek, siyahini
-//saxlamaq, bir dene elave etmek, yenilemek.
-
-//Niye generic (<T>)?
-//Generic olmasaydi, eyni yukleme/saxlama mentiqini 3 defe ayrica yazmali olardiq
-//— biri User ushun, biri Doctor ushun, biri Appointment ushun — halbuki mentiq eynidir.
-//<T> ile bunu bir defe yaziriq ve tekrar istifade ediriq.

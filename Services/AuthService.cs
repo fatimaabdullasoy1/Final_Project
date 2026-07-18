@@ -4,7 +4,6 @@ using System.Linq;
 using Homewrok_final.Data;
 using Homewrok_final.Models;
 
-// User ve Doctor ucun qeydiyyat ve login emeliyyatlarini burda yaziram
 namespace Homewrok_final.Services
 {
     public class AuthService
@@ -18,7 +17,6 @@ namespace Homewrok_final.Services
             _doctorRepository = doctorRepository;
         }
 
-        //yeni user yaradir, eyni email varsa null qaytarir
         public User RegisterUser(string name, string surname, string email, string phone, string password)
         {
             List<User> users = _userRepository.LoadAll();
@@ -26,7 +24,7 @@ namespace Homewrok_final.Services
             bool emailExists = users.Any(u => u.Email == email);
             if (emailExists)
             {
-                return null; // email artıq istifadə olunub
+                return null; 
             }
 
             User newUser = new User
@@ -43,7 +41,6 @@ namespace Homewrok_final.Services
             return newUser;
         }
 
-        //Yeni hekim yaradir, statusu Pending olur (admin tesdiqi lazimdir)
         public Doctor RegisterDoctor(string name, string surname, string email, string password, Shobe sobe, int isTecrube)
         {
             List<Doctor> doctors = _doctorRepository.LoadAll();
@@ -63,7 +60,7 @@ namespace Homewrok_final.Services
                 Password = password,
                 Sobe = sobe,
                 IsTecrube = isTecrube,
-                Status = DoctorStatus.Pending // admin təsdiqləməlidir
+                Status = DoctorStatus.Pending 
             };
 
             _doctorRepository.Add(newDoctor);
@@ -78,7 +75,7 @@ namespace Homewrok_final.Services
 
         public Doctor LoginDoctor(string email, string password)
         {
-            List<Doctor> doctors = _doctorRepository.LoadAll();  //file dan butun doctorlqri yukleyir yoxlama ucun
+            List<Doctor> doctors = _doctorRepository.LoadAll();  
             Doctor doctor = doctors.FirstOrDefault(d => d.Email == email && d.Password == password);
 
             if (doctor == null)

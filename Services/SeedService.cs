@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Homewrok_final.Data;
 using Homewrok_final.Models;
 
-// Proqram ilk defe achilanda 9 hekim ve onlarin qebul saatlarini yaradir hansiki 27 qebul saati var
 namespace Homewrok_final.Services
 {
     public class SeedService
@@ -18,29 +17,25 @@ namespace Homewrok_final.Services
             _appointmentRepository = appointmentRepository;
         }
 
-        //Eger artiq hekim varsa, tekrar yaratmir
+
         public void SeedIfEmpty()
         {
             List<Doctor> existingDoctors = _doctorRepository.LoadAll();
 
             if (existingDoctors.Count > 0)
             {
-                // Already seeded, don't duplicate
                 return;
             }
 
             List<Doctor> doctors = new List<Doctor>();
 
-            // Pediatriya - 3 doctors
             doctors.Add(CreateDoctor("Aygun", "Mammadova", 5, Shobe.Pediatriya));
             doctors.Add(CreateDoctor("Kamran", "Isayev", 8, Shobe.Pediatriya));
             doctors.Add(CreateDoctor("Nigar", "Huseynova", 3, Shobe.Pediatriya));
 
-            // Travmatologiya - 2 doctors
             doctors.Add(CreateDoctor("Elvin", "Rzayev", 10, Shobe.Travmatologiya));
             doctors.Add(CreateDoctor("Turan", "Guliyev", 6, Shobe.Travmatologiya));
 
-            // Stomatologiya - 4 doctors
             doctors.Add(CreateDoctor("Leyla", "Aliyeva", 4, Shobe.Stomatologiya));
             doctors.Add(CreateDoctor("Rashad", "Hasanov", 7, Shobe.Stomatologiya));
             doctors.Add(CreateDoctor("Sabina", "Karimova", 2, Shobe.Stomatologiya));
@@ -48,7 +43,6 @@ namespace Homewrok_final.Services
 
             _doctorRepository.SaveAll(doctors);
 
-            // Now create appointment slots for every doctor
             List<Appointment> appointments = new List<Appointment>();
 
             string[] timeSlots = { "09:00-11:00", "12:00-14:00", "15:00-17:00" };
@@ -83,7 +77,7 @@ namespace Homewrok_final.Services
                 Sobe = shobe,
                 Status = DoctorStatus.Approved,
                 Email = $"{name.ToLower()}.{surname.ToLower()}@hospital.com",
-                Password = "1234" // placeholder, doctors can change later if you add that feature
+                Password = "1234"
             };
         }
     }
